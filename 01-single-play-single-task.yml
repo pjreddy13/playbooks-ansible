@@ -1,0 +1,9 @@
+---
+- name: Update n1 server
+  hosts: n1
+  tasks:
+  - name: create reddy_dir directory
+    file:
+      path: /home/ec2-user/reddy_dir
+      state: directory
+...
