@@ -1,0 +1,17 @@
+---
+- name: Update n1 server
+  hosts: n1
+  tasks:
+  - name: create reddy_dir directory
+    file:
+      path: /home/ec2-user/reddy2_dir
+      state: directory
+
+- name: Update n2 server
+  hosts: n2
+  tasks:
+  - name: create reddy_dir directory
+    file:
+      path: /home/ubuntu/reddy1_dir
+      state: directory
+...
